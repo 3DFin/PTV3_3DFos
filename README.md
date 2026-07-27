@@ -2,7 +2,7 @@
 
 # 3DFoS
 
-Minimal PTv3 / LitePT standalone for forestry application, inspired by [sonata](https://github.com/facebookresearch/sonata) standalone.
+Minimal PTv3 / LitePT inference for forestry application, inspired by [sonata](https://github.com/facebookresearch/sonata) standalone.
 
 ## What it does
 
@@ -12,6 +12,8 @@ This tool takes raw ground-based forest point clouds and performs semantic segme
 - **Understorey:** Shrubs, saplings, and other understorey elements.
 - **Stems:** Main trunk architecture.
 - **Canopy:** foliage and branches.
+
+It's available in 3 flavors: CLI, Standalone GUI and CloudCompare plugin.
 
 ![image](src/three_d_fos/assets/3dfos_segmentation.png)
 
@@ -79,6 +81,10 @@ i.e on `Windows Developer PowerShell` terminal session.
 $env:DISTUTILS_USE_SDK = 1
 uv sync --extra cu130 --extra nanotsparsecuda
 ```
+
+### CloudCompare plugin
+
+refer to the dedicated [section](doc/install_cloudcompare.md).
 
 ## Usage
 
